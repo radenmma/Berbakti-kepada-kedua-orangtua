@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PAI Kelas 3 | Perilaku Terpuji Adalah Kepribadianku</title>
+<style>
+:root{--ink:#24324a;--muted:#63718a;--cream:#fffaf0;--paper:#fff;--purple:#7564c9;--pink:#ff8e9e;--yellow:#ffd66b;--mint:#8ed9c1;--blue:#8bc7ef;--line:#e9e7f3}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(135deg,#fff8e8,#f1f0ff 55%,#e9fbf5);font-family:ui-rounded,"Trebuchet MS",system-ui,sans-serif;color:var(--ink);line-height:1.55}
+header{padding:24px 18px 30px;text-align:center;background:radial-gradient(circle at 15% 20%,#fff 0 5%,transparent 5.5%),linear-gradient(120deg,#796bd0,#9a8de4 55%,#f49baa);color:white;position:relative;overflow:hidden}
+header:after{content:"✦  ☁  ✿  ★  ✦";position:absolute;left:0;right:0;bottom:5px;letter-spacing:35px;opacity:.45;font-size:22px}
+.kicker{font-size:.85rem;font-weight:800;letter-spacing:2px;text-transform:uppercase;opacity:.9}
+h1{font-size:clamp(1.8rem,5vw,3rem);line-height:1.1;margin:9px auto;max-width:850px}
+header p{max-width:700px;margin:12px auto 0;font-size:1.05rem}
+.shell{max-width:1080px;margin:auto;padding:20px 16px 50px}
+.topbar{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-bottom:16px}
+.pill{background:#fff;border:1px solid var(--line);padding:8px 13px;border-radius:999px;font-size:.9rem;font-weight:700}
+.progress{height:10px;background:#e8e5f4;border-radius:20px;overflow:hidden;flex:1;min-width:130px}.progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--pink),var(--purple));transition:.3s}
+.layout{display:grid;grid-template-columns:245px 1fr;gap:18px;align-items:start}
+nav,.panel{background:#ffffffd9;border:1px solid #fff;border-radius:22px;box-shadow:0 10px 30px #544a8b12}
+nav{padding:14px;position:sticky;top:12px}
+nav h3{margin:5px 8px 10px;font-size:1rem}
+.navbtn{width:100%;text-align:left;border:0;background:transparent;padding:11px;border-radius:13px;color:var(--ink);font:inherit;cursor:pointer;margin:2px 0}
+.navbtn.active,.navbtn:hover{background:#efedff;color:#5545ad;font-weight:800}
+main{min-width:0}.panel{padding:clamp(18px,3vw,30px);margin-bottom:16px}
+h2{font-size:clamp(1.45rem,3vw,2rem);margin:0 0 8px;color:#5146a1}
+h3{margin:15px 0 7px}p{margin:8px 0}.lead{font-size:1.08rem;color:#4c5870}
+.hero-art{display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;background:linear-gradient(120deg,#fff1d6,#f2efff);border-radius:20px;padding:20px;margin:16px 0}
+.character{font-size:clamp(3.2rem,9vw,5.5rem);filter:drop-shadow(0 5px 2px #3332)}
+.speech{background:white;border-radius:18px;padding:14px 17px;max-width:440px;box-shadow:0 4px 14px #3331}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.tile{padding:15px;border-radius:17px;background:#f5f3ff;border:1px solid #ebe7ff}
+.tile:nth-child(2){background:#fff3f4}.tile:nth-child(3){background:#edfbf5}.tile:nth-child(4){background:#fff8e5}
+.tile .emoji{font-size:2rem}
+.callout{padding:15px 17px;border-left:5px solid var(--yellow);background:#fff8df;border-radius:12px;margin:14px 0}
+button,.action{border:0;border-radius:13px;padding:11px 16px;background:var(--purple);color:white;font:700 1rem inherit;cursor:pointer;transition:.15s}
+button:hover{filter:brightness(.96);transform:translateY(-1px)}button.secondary{background:#eeeaff;color:#5146a1}button.good{background:#258b70}
+.choice{display:block;width:100%;text-align:left;background:#f5f4fb;color:var(--ink);margin:8px 0;border:2px solid transparent}
+.choice.selected{border-color:var(--purple);background:#eeebff}
+.feedback{padding:12px 14px;border-radius:12px;margin-top:10px;display:none}.feedback.show{display:block}.feedback.ok{background:#e7f8ef;color:#176348}.feedback.no{background:#fff1e6;color:#8a4c17}
+.dua{background:linear-gradient(135deg,#eaf9f2,#f2efff);border-radius:20px;padding:22px;text-align:center;margin:15px 0}
+.arabic{font-size:clamp(1.5rem,4vw,2.2rem);line-height:1.9;color:#3f398b;direction:rtl}
+.translit{font-weight:800;color:#5c559c}.meaning{font-style:italic;color:#4f5b70}
+.quiz-head{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;color:var(--muted);font-weight:800}
+.question{font-size:1.15rem;font-weight:800;margin:15px 0}
+.result{font-size:1.3rem;font-weight:900;color:#5146a1}
+input[type=text]{padding:12px;border:2px solid #ddd8f3;border-radius:12px;font:inherit;width:min(100%,360px)}
+.small{font-size:.9rem;color:var(--muted)}
+footer{text-align:center;color:var(--muted);font-size:.9rem;padding:18px}
+@media(max-width:760px){.layout{grid-template-columns:1fr}nav{position:static}.navlist{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px}.grid2{grid-template-columns:1fr}.shell{padding:13px}}
+@media print{body{background:white}.layout{display:block}nav,.topbar,button{display:none!important}.panel{box-shadow:none;break-inside:avoid}}
+</style>
+</head>
+<body>
+<header>
+ <div class="kicker">Petualangan Akhlak • PAI Kelas 3</div>
+ <h1>Perilaku Terpuji<br>Adalah Kepribadianku</h1>
+ <p>Belajar menyayangi orang tua, menghormati guru, dan bersikap baik kepada semua orang. Yuk, jadi anak hebat yang berakhlak mulia!</p>
+</header>
+<div class="shell">
+ <div class="topbar"><span class="pill">🌟 Misi kebaikanmu</span><div class="progress"><span id="progress"></span></div><span class="pill" id="progressText">0 / 7 bagian</span></div>
+ <div class="layout">
+  <nav><h3>📚 Peta Belajar</h3><div class="navlist" id="navlist"></div></nav>
+  <main id="content"></main>
+ </div>
+ <footer>🌼 Ingat: kebaikan kecil yang dilakukan dengan ikhlas sangat berarti. 🌼</footer>
+</div>
+<script>
+const sections=[
+ {id:'start',label:'1. Ayo Mulai!',title:'Ayo Mulai dengan Cerita!',body:`<p class="lead">Pagi ini, Rani sedang bersiap ke sekolah. Ibu meminta Rani merapikan tempat tidur. Di sekolah, Pak Guru menjelaskan pelajaran, tetapi Rani ingin terus mengobrol.</p><div class="hero-art"><div class="character">👧🏻 🛏️</div><div class="speech"><b>Menurutmu, apa yang sebaiknya Rani lakukan?</b><p>A. Membantu Ibu lalu mendengarkan guru dengan baik.</p><p>B. Pura-pura tidak mendengar dan terus mengobrol.</p></div></div><p>Pikirkan jawabanmu, lalu diskusikan dengan teman. Setiap pilihan menunjukkan sikap yang berbeda.</p><div class="callout">💬 <b>Pertanyaan pemantik:</b> Kebaikan apa yang pernah kamu lakukan untuk orang tua atau gurumu?</div><p class="small">Waktu kegiatan: 5–10 menit. Guru dapat meminta 2–3 murid berbagi cerita.</p>`},
+ {id:'allah',label:'2. Perintah Allah',title:'Berbuat Baik adalah Perintah Allah',body:`<div class="hero-art"><div class="character">🌈 📖 🤲</div><div class="speech">Allah SWT memerintahkan kita untuk berbuat baik kepada orang tua, guru, dan sesama. Kita melakukannya dengan ikhlas karena Allah.</div></div><p>Berbakti kepada orang tua disebut <b>birrul walidain</b>. Menghormati guru dan orang lain juga termasuk perilaku terpuji.</p><div class="grid2"><div class="tile"><div class="emoji">💗</div><b>Berbakti</b><p>Menyayangi, membantu, dan menaati nasihat orang tua selama dalam kebaikan.</p></div><div class="tile"><div class="emoji">🌟</div><b>Menghormati</b><p>Bersikap sopan, mendengarkan, dan menghargai orang lain.</p></div></div><div class="callout">📌 <b>Ingat:</b> Taat kepada manusia dilakukan dalam hal yang baik. Jika ada permintaan yang salah atau membuatmu tidak aman, ceritakan kepada orang dewasa tepercaya.</div><button onclick="markDone('allah')">Saya paham ✓</button>`},
+ {id:'parents',label:'3. Sayang Orang Tua',title:'Berbakti kepada Orang Tua',body:`<div class="hero-art"><div class="character">👨‍👩‍👧‍👦 🏡</div><div class="speech">Orang tua merawat dan menyayangi kita. Mari membalas kebaikan mereka dengan sikap santun dan penuh kasih.</div></div><div class="grid2"><div class="tile"><div class="emoji">🧹</div><b>Membantu</b><p>Merapikan mainan dan membantu pekerjaan ringan sesuai kemampuan.</p></div><div class="tile"><div class="emoji">👂</div><b>Mendengarkan</b><p>Mendengarkan nasihat dan berbicara dengan lembut.</p></div><div class="tile"><div class="emoji">🙏</div><b>Mendoakan</b><p>Mendoakan kebaikan untuk ayah dan ibu.</p></div><div class="tile"><div class="emoji">😊</div><b>Berterima kasih</b><p>Mengucapkan terima kasih dan meminta maaf jika berbuat salah.</p></div></div><div class="callout">🎯 <b>Coba pilih:</b> Ibu sedang membawa belanjaan. Apa yang bisa kamu lakukan? Tawarkan bantuan dengan sopan dan lakukan sesuai kemampuan.</div><button onclick="markDone('parents')">Saya paham ✓</button>`},
+ {id:'dua',label:'4. Doa Orang Tua',title:'Yuk, Hafalkan Doa untuk Orang Tua',body:`<p class="lead">Kita memohon kepada Allah agar menyayangi ayah dan ibu sebagaimana mereka menyayangi dan merawat kita.</p><div class="dua"><div class="arabic">رَبِّ اغْفِرْ لِيْ وَلِوَالِدَيَّ وَارْحَمْهُمَا كَمَا رَبَّيَانِيْ صَغِيْرًا</div><p class="translit">Rabbi-ghfir lī wa li-wālidayya warḥamhumā kamā rabbayānī ṣaghīrā.</p><p class="meaning">“Ya Tuhanku, ampunilah aku dan kedua orang tuaku, serta sayangilah mereka sebagaimana mereka telah menyayangiku pada waktu kecil.”</p></div><div class="hero-art"><div class="character">🤲💞</div><div class="speech"><b>Latihan 3 langkah:</b><br>1. Dengarkan guru membaca doa.<br>2. Ulangi bersama-sama perlahan.<br>3. Coba baca sendiri dengan tenang.</div></div><button class="secondary" onclick="speakDua()">🔊 Dengarkan pelafalan (fitur suara perangkat)</button> <button onclick="markDone('dua')">Saya sudah berlatih ✓</button><p class="small">Catatan guru: bacakan doa dengan tartil dan bantu murid memperhatikan pelafalan.</p>`},
+ {id:'teacher',label:'5. Hormat Guru',title:'Menghormati Guru dan Orang Lain',body:`<div class="hero-art"><div class="character">👩‍🏫 🍎 📚</div><div class="speech">Guru membimbing kita belajar. Kita juga perlu menghargai teman, tetangga, petugas sekolah, dan siapa pun.</div></div><div class="grid2"><div class="tile"><div class="emoji">🙋</div><b>Saat guru menjelaskan</b><p>Duduk tertib, menyimak, dan bertanya dengan sopan.</p></div><div class="tile"><div class="emoji">🤝</div><b>Saat bertemu orang lain</b><p>Menyapa, mengucapkan salam, dan berbicara santun.</p></div><div class="tile"><div class="emoji">🧡</div><b>Saat berbeda pendapat</b><p>Mendengarkan pendapat teman dan tidak mengejek.</p></div><div class="tile"><div class="emoji">🧽</div><b>Di lingkungan sekolah</b><p>Menjaga kebersihan dan menghargai semua warga sekolah.</p></div></div><div class="callout">🎭 <b>Peragakan bersama teman:</b> Satu murid menjadi guru yang sedang menjelaskan. Murid lain menunjukkan sikap menyimak dan mengangkat tangan sebelum bertanya.</div><button onclick="markDone('teacher')">Saya paham ✓</button>`},
+ {id:'practice',label:'6. Game Kebaikan',title:'Game: Pilih Sikap Terpuji!',body:`<p class="lead">Baca situasi berikut. Pilih tindakan yang paling baik, lalu lihat alasannya.</p><div id="miniGame"></div>`},
+ {id:'quiz',label:'7. Kuis & Tantangan',title:'Kuis Hebat dan Misi Kebaikan',body:`<p class="lead">Jawab 20 pertanyaan berikut. Baca situasinya dengan teliti. Setelah memilih, kamu akan mendapat pembahasan.</p><div id="quiz"></div><div class="callout"><b>🌱 Tantangan 1 hari: Pohon Kebaikan</b><p>Pilih satu tindakan baik di rumah dan satu di sekolah. Contoh: merapikan perlengkapan sendiri, membantu orang tua, menyimak guru, atau menyapa petugas sekolah dengan sopan.</p><p>Setelah melakukannya, ceritakan kepada guru atau keluarga: apa yang kamu lakukan, siapa yang terbantu, dan bagaimana perasaanmu?</p></div><label for="reflection"><b>Catatan janjiku:</b></label><p><input id="reflection" type="text" placeholder="Hari ini aku akan..." /></p><button onclick="savePromise()">Simpan janji kebaikanku</button><span id="promiseMsg" class="small"></span>`}
+];
+const game=[
+ ['Ayah pulang bekerja dan terlihat lelah.','Menawarkan bantuan merapikan meja.','Membentak karena ingin bermain.','A','Membantu dengan tulus adalah bentuk berbakti.'],
+ ['Guru sedang menerangkan. Teman mengajak mengobrol.','Ikut mengobrol keras.','Tetap menyimak dan mengajak teman tenang.','B','Menyimak adalah bentuk menghormati guru.'],
+ ['Kamu tidak sengaja menyenggol teman.','Meminta maaf.','Menyalahkan teman.','A','Meminta maaf menunjukkan sikap bertanggung jawab.']
+];
+const questions=[
+['Ibu meminta bantuan merapikan buku. Sikap terbaik adalah…',['Membantu sesuai kemampuan','Berpura-pura tidak mendengar','Marah kepada ibu'],'A','Membantu dengan ikhlas merupakan contoh berbakti kepada orang tua.'],
+['Saat ayah memberi nasihat yang baik, kita sebaiknya…',['Memotong pembicaraan','Mendengarkan dengan sopan','Menertawakan ayah'],'B','Mendengarkan nasihat baik menunjukkan rasa hormat.'],
+['Ketika guru menjelaskan pelajaran, kita…',['Bermain sendiri','Mengobrol keras','Menyimak dengan tertib'],'C','Menyimak membantu kita belajar dan menghormati guru.'],
+['Jika melakukan kesalahan kepada orang tua, kita…',['Meminta maaf','Menyembunyikannya terus','Menyalahkan orang lain'],'A','Berani meminta maaf adalah perilaku terpuji.'],
+['Doa untuk kedua orang tua mengajarkan kita untuk…',['Melupakan kebaikan mereka','Memohon ampunan dan kasih sayang Allah bagi mereka','Mengejek mereka'],'B','Kita mendoakan kebaikan untuk ayah dan ibu.'],
+['Saat bertemu guru di sekolah, kita dapat…',['Berpaling dengan sengaja','Berteriak mengejek','Menyapa dengan sopan'],'C','Menyapa dengan santun adalah bentuk penghormatan.'],
+['Teman berbeda pendapat saat diskusi. Kita sebaiknya…',['Mendengarkan pendapatnya','Mengejeknya','Memaksakan pendapat sendiri'],'A','Menghargai perbedaan membuat diskusi nyaman.'],
+['Adik meminta bantuan mengambilkan pensil. Kamu…',['Membentaknya','Membantu jika mampu','Pura-pura tidak tahu'],'B','Membantu anggota keluarga menumbuhkan kasih sayang.'],
+['Saat guru memberi tugas, kita sebaiknya…',['Membuang buku','Mengganggu teman','Mengerjakan dengan sungguh-sungguh'],'C','Melaksanakan tugas dengan tanggung jawab adalah sikap baik.'],
+['Orang tua sedang berbicara. Kita ingin menyampaikan sesuatu. Kita…',['Menunggu giliran dan berbicara santun','Berteriak memotong','Membentak'],'A','Menunggu giliran menunjukkan kesopanan.'],
+['Petugas kebersihan sekolah sedang bekerja. Sikap kita…',['Mengotori lantai lagi','Menghargai dan menjaga kebersihan','Menertawakannya'],'B','Semua orang patut dihormati, apa pun pekerjaannya.'],
+['Kamu melihat teman kesulitan membawa buku. Kamu…',['Mengejeknya','Meninggalkannya sambil tertawa','Menawarkan bantuan'],'C','Menolong teman adalah perilaku terpuji.'],
+['Ketika dinasihati guru karena kelas gaduh, kita…',['Mendengarkan dan memperbaiki sikap','Membantah dengan kasar','Mengajak teman makin gaduh'],'A','Menerima nasihat baik membantu kita menjadi lebih baik.'],
+['Ayah dan ibu telah merawat kita. Sikap yang tepat…',['Mengabaikan mereka','Menyayangi dan mendoakan mereka','Berbicara kasar'],'B','Kasih sayang dan doa adalah wujud bakti.'],
+['Jika tidak setuju dengan teman, kita…',['Mendorongnya','Mengejeknya','Menyampaikan pendapat dengan santun'],'C','Kita boleh berbeda pendapat tanpa menyakiti orang lain.'],
+['Saat guru bertanya dan kamu tahu jawabannya, kamu…',['Mengangkat tangan sebelum menjawab','Berteriak bersamaan','Mengejek teman yang salah'],'A','Mengangkat tangan menjaga ketertiban kelas.'],
+['Ibu meminta kita menyimpan sepatu pada tempatnya. Kita…',['Melempar sepatu','Menyimpannya dengan rapi','Membiarkannya berserakan'],'B','Melakukan tugas sederhana di rumah termasuk membantu orang tua.'],
+['Teman tidak sengaja menjatuhkan penghapusmu. Kamu…',['Langsung marah dan mengejek','Membalas menjatuhkan barangnya','Bicara baik-baik dan memaafkan'],'C','Bersikap tenang dan memaafkan menjaga persahabatan.'],
+['Sikap hormat kepada orang lain ditunjukkan dengan…',['Berkata sopan dan menghargai','Memanggil dengan julukan buruk','Memotong pembicaraan'],'A','Perkataan santun membuat orang lain merasa dihargai.'],
+['Mengapa kita berbakti kepada orang tua dan menghormati guru?',['Agar selalu mendapat hadiah','Karena Allah memerintahkan kebaikan dan kita ingin berakhlak mulia','Supaya dipuji saja'],'B','Kita berbuat baik karena Allah dan dengan niat yang ikhlas.']
+];
+let done=new Set(), current='start', gameIndex=0, score=0, answered=0;
+const nav=document.getElementById('navlist'), content=document.getElementById('content');
+sections.forEach(s=>{let b=document.createElement('button');b.className='navbtn';b.textContent=s.label;b.onclick=()=>show(s.id);b.id='nav-'+s.id;nav.appendChild(b)});
+function updateProgress(){let n=done.size;document.getElementById('progress').style.width=(n/7*100)+'%';document.getElementById('progressText').textContent=n+' / 7 bagian';}
+function show(id){current=id;let s=sections.find(x=>x.id===id);content.innerHTML=`<section class="panel"><div class="pill">✨ ${s.label}</div><h2>${s.title}</h2>${s.body}</section>`;document.querySelectorAll('.navbtn').forEach(b=>b.classList.toggle('active',b.id==='nav-'+id));if(id==='practice')renderGame();if(id==='quiz')renderQuiz();window.scrollTo({top:0,behavior:'smooth'});}
+function markDone(id){done.add(id);updateProgress();let b=document.querySelector('#nav-'+id);if(b&&!b.textContent.includes('✓'))b.textContent+=' ✓';alert('Bagus! Kamu sudah menyelesaikan bagian ini.');}
+function renderGame(){let g=game[gameIndex];let host=document.getElementById('miniGame');host.innerHTML=`<div class="tile"><b>Situasi ${gameIndex+1} dari ${game.length}</b><p>${g[0]}</p><button class="choice" onclick="gameAnswer('A')">A. ${g[1]}</button><button class="choice" onclick="gameAnswer('B')">B. ${g[2]}</button><div id="gameFeedback" class="feedback"></div></div>`;}
+function gameAnswer(a){let g=game[gameIndex],f=document.getElementById('gameFeedback');f.className='feedback show '+(a===g[3]?'ok':'no');f.innerHTML=(a===g[3]?'Hebat, tepat! ':'Yuk, coba pikirkan lagi. ')+g[4]+(gameIndex<game.length-1?'<p><button onclick="gameIndex++;renderGame()">Situasi berikutnya →</button></p>':'<p><button onclick="markDone(\\'practice\\')">Selesaikan game ✓</button></p>');}
+function renderQuiz(){let host=document.getElementById('quiz');host.innerHTML=`<div class="quiz-head"><span id="qCount">Soal 1 dari 20</span><span id="qScore">Benar: 0</span></div><div class="progress"><span id="qProgress"></span></div><div id="qArea"></div>`;quizIndex=0;score=0;answered=0;showQuestion();}
+let quizIndex=0;
+function showQuestion(){let q=questions[quizIndex],area=document.getElementById('qArea');document.getElementById('qCount').textContent=`Soal ${quizIndex+1} dari 20`;document.getElementById('qScore').textContent=`Benar: ${score}`;document.getElementById('qProgress').style.width=(quizIndex/20*100)+'%';area.innerHTML=`<div class="question">${q[0]}</div>${q[1].map((v,i)=>`<button class="choice" onclick="answerQuiz('${'ABC'[i]}')">${'ABC'[i]}. ${v}</button>`).join('')}<div id="qFeedback" class="feedback"></div>`;}
+function answerQuiz(a){let q=questions[quizIndex],f=document.getElementById('qFeedback');document.querySelectorAll('#qArea .choice').forEach(b=>b.disabled=true);let ok=a===q[2];if(ok)score++;answered++;f.className='feedback show '+(ok?'ok':'no');f.innerHTML=(ok?'Benar sekali! 🌟 ':'Belum tepat. Tidak apa-apa, kita belajar! ')+q[3]+(quizIndex<19?'<p><button onclick="quizIndex++;showQuestion()">Soal berikutnya →</button></p>':'<p><button onclick="finishQuiz()">Lihat hasil kuis</button></p>');document.getElementById('qScore').textContent=`Benar: ${score}`;}
+function finishQuiz(){document.getElementById('qProgress').style.width='100%';document.getElementById('qArea').innerHTML=`<div class="dua"><div class="character">🏆🎉</div><div class="result">Kamu menjawab benar ${score} dari 20 soal!</div><p>${score>=17?'Luar biasa! Terus jaga perilaku terpuji.':score>=12?'Bagus! Baca kembali materi yang belum kamu kuasai.':'Terus semangat! Pelajari kembali materi lalu coba lagi.'}</p><button onclick="renderQuiz()">Ulangi kuis</button></div>`;done.add('quiz');updateProgress();document.getElementById('nav-quiz').textContent='7. Kuis & Tantangan ✓';}
+function savePromise(){let v=document.getElementById('reflection').value.trim();document.getElementById('promiseMsg').textContent=v?' 🌟 Janjimu: “'+v+'”':' Tuliskan satu janji kebaikan terlebih dahulu.';}
+function speakDua(){let text='Rabbi ghfir li wa li walidayya warhamhuma kama rabbayani shaghira.';if('speechSynthesis'in window){let u=new SpeechSynthesisUtterance(text);u.lang='id-ID';speechSynthesis.speak(u);}else alert(text);}
+show('start');
+</script>
+</body></html>
